@@ -1,0 +1,15 @@
+﻿@page
+@model HangfireDemo.Pages.IndexModel
+@{
+}
+
+<h2>Welcome to Hangfire Demo</h2>
+
+<form asp-page=".">
+    <div class="form-group">
+        <label asp-for="Count">Number of emails to send:</label>
+        <input class="form-control" asp-for="Count" placeholder="Example: 3">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Schedule Job</button>
+</form>
